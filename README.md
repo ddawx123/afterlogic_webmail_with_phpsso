@@ -1,0 +1,2 @@
+# afterlogic_webmail_with_phpsso
+基于afterlogic-webmail二次开发实现跨域sso的版本
