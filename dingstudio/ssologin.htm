@@ -104,20 +104,14 @@
                                         bindUserForm();
                                     }
                                     else {
-                                        setTimeout(() => {
-                                            $('#statusBox').css('color', 'orangered');
-                                            $('#statusBox').html('目标应用系统响应超时，身份认证无法继续。');
-                                        }, 1000);
+                                        $('#statusBox').css('color', 'orangered');
+                                        $('#statusBox').html('目标应用系统响应超时，身份认证无法继续。');
                                     }
                                 }
                             });
                         }
                         else {
-                            $('#statusBox').css('color', 'orangered');
-                            $('#statusBox').html('正在跳转。');
-                            setTimeout(() => {
-                                location.href = LoginServlet;
-                            }, 1000);
+                            location.href = LoginServlet;
                         }
                     },
                     error: function (data) {
